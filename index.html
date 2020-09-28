@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Web Dhany</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/tes.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+         <link rel="stylesheet" href="css/animate.css">
+        <script src="js/jquery-v1-12-4.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">     
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-light fixed-top">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarnya">
+                    <i class=><i class="fas fa-book-reader fa-7x"></i></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarnya">
+                    <div class="navbar-nav">
+                        <a class="link" style="text-decoration:none;" href="#1">Home</a>
+                        <a  onclick="enableAutoplay()" class="link" style="text-decoration:none;" href="#2">Tentang Kami</a>
+                        <a class="link" style="text-decoration:none;" href="#3">Kontak</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--batas section 1-->
+        <section class="home animate__bounceIn text-center" id="1">
+            <div class="container">
+                    <img src="img/kopilogo.png" style="width: 400px;height: 300px; margin-top: 50px;" class="mx-auto d-block wow fadeInLeftBig animated animated">
+                    <h1 class="heading-1">Selamat Datang di Kopi Senja</h1></>
+            </div>
+        </section>
+          <!--batas section 2-->
+        <section class="content" id="2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8  wow fadeInLeftBig animated animated" style="border: 2px solid black; padding: 40px;border-radius: 20px;">
+                        <h2 class="heading-2">Tentang Kopi Senja</h2>
+                        <hr>
+                        <h3 class="heading-3">
+                           <p> Berbagai literatur mencatat tanaman kopi berasal dari Abyssinia, nama daerah lawas di Afrika yang saat ini mencakup wilayah negara Etiopia dan Eritrea. Namun tidak banyak diketahui bagaimana orang-orang Abyssinia memanfaatkan tanaman kopi. Kopi sebagai minuman pertama kali dipopulerkan oleh orang-orang Arab. Biji kopi dari Abyssinia dibawa oleh para pedagang Arab ke Yaman dan mulai menjadi komoditas komersial.<p>
+                            <hr>
+                           <p> Di masa awal, bangsa Arab memonopoli perdagangan biji kopi. Mereka mengendalikan perdagangan lewat pelabuhan Mocha, sebuah kota yang terletak di Yaman. Dari pelabuhan Mocha biji kopi diperdagangkan hingga ke Eropa. Saat itu Mocha menjadi satu-satunya gerbang lalu-lintas perdagangan biji kopi, sampai-sampai orang Eropa menyebut kopi sebagai Mocha. </p>
+                           <hr>
+                            <p>Memasuki abad ke-17 orang-orang Eropa mulai mengembangkan perkebunan kopi sendiri. Pertama-tama nereka mengembangkannya di Eropa, namun iklim di sana tidak cocok untuk tanaman kopi. Kemudian mereka mencoba membudidayakan tanaman tersebut di daerah jajahannya yang tersebar di berbagai penjuru bumi. Upayanya berhasil, orang-orang Eropa mampu menggeser dominasi bangsa Arab dalam memproduksi kopi.</p>
+                            <hr>
+                            <p>Salah satu pusat produksi kopi dunia ada di Pulau Jawa yang dikembangkan bangsa Belanda. Untuk masa tertentu kopi dari Jawa sempat mendominasi pasar kopi dunia. Saat itu secangkir kopi lebih popular dengan sebutan “Cup of Java”  atau “Secangkir Jawa”.</p>
+                        </h3>
+                    </div>
+                    <div class="col-md-4 wow fadeInRightBig animated animated">
+                        <img src="img/cup.png"  style="border: 2px solid black; padding: 20px;border-radius: 20px;" width="200px">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--batas section 3-->
+        <section class="content2" id="3">
+            <br>
+            <br>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <h1 class="heading-1" style="text-align:center; font-size: 60px !important;">Kontak Kami</h1>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-4 wow fadeInLeftBig animated animated">
+                        <div class="card">
+                            <div class="card-body text-center">
+                            <i class="fas fa-envelope fa-2x"></i>
+                            <hr>
+                            <h5>coffe@email.com</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeInLeftBig animated animated">
+                        <div class="card">
+                            <div class="card-body text-center">
+                            <i class="fas fa-phone fa-2x"></i>
+                            <hr>
+                            <h5>021-999-888</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeInLeftBig animated animated">
+                        <div class="card">
+                            <div class="card-body text-center">
+                            <i class="fas fa-search-location fa-2x"></i>
+                            <hr>
+                            <h5>Jalan Pemuda 1 Rawamangun</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <audio id="myAudio" controls style="display: none;">
+  <source src="audio/kopihitam.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+        <script type="text/javascript" src="js/wow.min.js"></script>        
+        <script type="text/javascript">
+         new WOW().init();
+            var x = document.getElementById("myAudio");
+                     function enableAutoplay() { 
+              x.autoplay = true;
+              x.load();
+            }
+
+        </script>
+    </body>
+</html> 
+        
+        
